@@ -317,13 +317,12 @@ if(!message.guild.member(message.author).hasPermission("MANAGE_GUILD")) return m
  
   }
 
-break;
 case "clear";
 if (message.member.hasPermission("MANAGE_MESSAGES")){
   message.channel.fetchMessages()
       .then(function(list){
           message.channel.bulkDelete(list);
-      },  function(err){message.channel.send("Erreur :x:")})}
+      }, function(err){message.channel.send("Erreur :x:")})}
 
 break;
 
