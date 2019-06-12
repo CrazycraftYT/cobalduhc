@@ -1,4 +1,4 @@
 {
-" préfixe " : " ! " ,
-" jeton " : " process.env.TOKEN "
+" préfix " : " ! " ,
+" token " : " process.env.TOKEN "
 }
