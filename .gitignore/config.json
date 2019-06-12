@@ -1,0 +1,4 @@
+{
+" préfixe " : " ! " ,
+" jeton " : " process.env.TOKEN "
+}
