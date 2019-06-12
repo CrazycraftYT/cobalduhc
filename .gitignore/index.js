@@ -5,7 +5,7 @@ var prefix = "!";
 
 var bot = new Discord.Client();
 
-bot.user.setActivity("CobaldUHC ?", {
+client.user.setActivity("CobaldUHC ?", {
   type: "STREAMING",
   url: "https://www.twitch.tv/---"
 });
