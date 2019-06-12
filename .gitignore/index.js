@@ -318,8 +318,6 @@ if(!message.guild.member(message.author).hasPermission("MANAGE_GUILD")) return m
  
   }
 
-}
+});
 
-
-
-bot.login(process.env.TOKEN);
+bot.login(process.env.TOKEN)
