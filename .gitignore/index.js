@@ -6,7 +6,7 @@ var prefix = "!";
 var bot = new Discord.Client();
 
 bot.on("ready", () => {
-  bot.user.setGame("CobaldUHC | :O", "https://www.twitch.tv/CobaldUHC")
+  bot.user.setGame("Le BOT est en développement - by Crazy")
 });
 
 bot.on('message', message => {
