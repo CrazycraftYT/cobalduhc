@@ -5,9 +5,8 @@ var prefix = "!";
 
 var bot = new Discord.Client();
 
-client.user.setActivity("with depression", {
-  type: "STREAMING",
-  url: "https://www.twitch.tv/monstercat"
+bot.on("ready", () => {
+  bot.user.setGame("CobaldUHC | :O", "https://www.twitch.tv/CobaldUHC")
 });
 
 bot.on('message', message => {
