@@ -327,6 +327,6 @@ if (message.member.hasPermission("MANAGE_MESSAGES")){
 
 break;
 
-});
+})
 
 bot.login(process.env.TOKEN)
