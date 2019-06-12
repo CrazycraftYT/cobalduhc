@@ -5,9 +5,8 @@ var prefix = "!";
 
 var bot = new Discord.Client();
 
-client.user.setActivity("CobaldUHC ?", {
-  type: "STREAMING",
-  url: "https://www.twitch.tv/---"
+bot.on("ready", () => {
+    bot.user.setGame("Heronia, c'est terminé ! Merci à vous !", "https://www.twitch.tv/maxwgamer")
 });
 
 bot.on('message', message => {
