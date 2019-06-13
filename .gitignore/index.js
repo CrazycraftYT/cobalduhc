@@ -317,20 +317,7 @@ if(!message.guild.member(message.author).hasPermission("MANAGE_GUILD")) return m
  
   }
 
-  module.exports.run = async (bot, message, args) => {
-
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply(":x: | Vous n'avez pas la permission !");
-    if(!args[0]) return message.channel.send(":x: | Vous n'avez pas la permission !");
-    message.channel.bulkDelete(args[0]).then(() => {
-    message.channel.send(`Messages supprimés: ${args[0]}`).then(msg => msg.delete(2000));
-  });
-  
-  }
-  
-  module.exports.help = {
-    name: "clear"
-  }
-
 })
 
-bot.login(process.env.TOKEN)
+bot.login(process.env.TOKEN);
+
