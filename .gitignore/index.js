@@ -10,19 +10,15 @@ bot.on("ready", () => {
 });
 
 bot.on('guildMemberAdd', member => {
-  const welcomechannel = member.guild.channels.find((x) => x.id === '587387385898336256' );
-  let b_embed = new Discord.RichEmbed()
-  .setColor('#0055ff')
-  .setDescription(`Bienvenue à ${member.user.username} sur le discord de **CobaldUHC** ! :grin:`)
-  return welcomechannel.send(b_embed)
-});
 
-bot.on('guildMemberRemove', member => {
-  const welcomechannel = member.guild.channels.find((x) => x.id === '587387385898336256' );
-  let a_embed = new Discord.RichEmbed()
-  .setColor('#0055ff')
-  .setDescription(`${member.user.username} a quitté le discord ! :wave: `)
-  return welcomechannel.send(a_embed)
+  let serverTag = member.guild.name
+  const welcomechannel = member.guild.channels.find('id', '588728102956302377')
+  const role = member.guild.roles.find("name", "Joueur")    
+  member.addRole(role)
+  var embed = new Discord.RichEmbed()
+  .setColor('#76D880')
+  .setDescription(`:inbox_tray: <@${member.user.id}> a rejoint ${serverTag}`)
+  return welcomechannel.send({embed})
 });
 
 bot.on('message', message => {
