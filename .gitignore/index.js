@@ -12,7 +12,7 @@ bot.on("ready", () => {
 bot.on('guildMemberAdd', member => {
 
   let serverTag = member.guild.name
-  const welcomechannel = member.guild.channels.find('id', '588728102956302377')
+  const welcomechannel = member.guild.channels.find('id', '587387385898336256')
   const role = member.guild.roles.find("name", "Joueur")    
   member.addRole(role)
   var embed = new Discord.RichEmbed()
