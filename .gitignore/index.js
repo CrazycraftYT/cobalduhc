@@ -17,7 +17,7 @@ bot.on('guildMemberAdd', member => {
   member.addRole(role)
   var embed = new Discord.RichEmbed()
   .setColor('#76D880')
-  .setDescription(`:inbox_tray: <@${member.user.id}> a rejoint ${serverTag}`)
+  .setDescription(`:white_check_mark: Bienvenue à <@${member.user.id}> sur le discord de ${serverTag}`)
   return welcomechannel.send({embed})
 });
 
