@@ -9,6 +9,22 @@ bot.on("ready", () => {
   bot.user.setGame("Le BOT est en développement - by Crazy")
 });
 
+bot.on('guildMemberAdd', member => {
+  const welcomechannel = member.guild.channels.find((x) => x.id === '587387385898336256' );
+  let b_embed = new Discord.RichEmbed()
+  .setColor('#0055ff')
+  .setDescription(`Bienvenue à ${member.user.username} sur le discord de **CobaldUHC** ! :grin:`)
+  return welcomechannel.send(b_embed)
+})
+
+bot.on('guildMemberRemove', member => {
+  const welcomechannel = member.guild.channels.find((x) => x.id === '587387385898336256' );
+  let a_embed = new Discord.RichEmbed()
+  .setColor('#0055ff')
+  .setDescription(`${member.user.username} a quitté le discord ! :wave: `)
+  return welcomechannel.send(a_embed)
+})
+
 bot.on('message', message => {
     if (message.author.equals(bot.user)) return;
 
