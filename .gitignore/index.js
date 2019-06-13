@@ -17,7 +17,7 @@ bot.on('guildMemberAdd', member => {
   member.addRole(role)
   var embed = new Discord.RichEmbed()
   .setColor('#76D880')
-  .setDescription(`:white_check_mark: Bienvenue à <@${member.user.id}> sur le discord de ${serverTag}`)
+  .setDescription(`:white_check_mark: Bienvenue à <@${member.user.id}> sur le discord de ${serverTag} ! Amuse toi bien :D`)
   return welcomechannel.send({embed})
 });
 
@@ -332,4 +332,3 @@ if(!message.guild.member(message.author).hasPermission("MANAGE_GUILD")) return m
 })
 
 bot.login(process.env.TOKEN);
-
