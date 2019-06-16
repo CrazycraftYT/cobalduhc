@@ -54,7 +54,7 @@ bot.on('message', message => {
         var embed = new Discord.RichEmbed()
             .setTitle("__Voici le Mumble du serveur :__")
             .setDescription(" -=- ")
-            .addField("*IP: mumble.cobalduhc.fr*", " Port: 64738 ", true)
+            .addField("*IP: mumble.cobalduhc.fr*", " ***Port: 64738*** ", true)
             .addField("Si cela ne fonctionne pas, contactez un membre du Staff.", " -=- ", true)
             .setColor(0x0000FF)
             .setFooter("© CobaldUHC 2019")
