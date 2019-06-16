@@ -12,7 +12,7 @@ bot.on("ready", () => {
 bot.on('guildMemberAdd', member => {
 
   let serverTag = member.guild.name
-  const welcomechannel = member.guild.channels.find('id', '587387385898336256')
+  const welcomechannel = member.guild.channels.find('id', '588728102956302377')
   const role = member.guild.roles.find("name", "Joueur")    
   member.addRole(role)
   var embed = new Discord.RichEmbed()
@@ -33,7 +33,7 @@ bot.on('message', message => {
             .setTitle("__Liste des commandes du discord :__")
             .setDescription(" ")
             .addField("*» Serveur «*", "!ip » Permet d'afficher l'IP du serveur", true)
-            .addField("*» Twitter «*", "!twitter » Permet d'obtenir le lien du twitter de CobaldUHC", true)
+            .addField("*» Mumble «*", "!mumble » Permet d'obtenir l'IP du mumble de CobaldUHC", true)
             .setColor(0x0000FF)
             .setFooter("© CobaldUHC 2019")
         message.channel.sendEmbed(embed);
@@ -43,18 +43,18 @@ bot.on('message', message => {
         var embed = new Discord.RichEmbed()
             .setTitle("__Voici l'IP du serveur :__")
             .setDescription(" -=- ")
-            .addField("*---*", " -=- ", true)
+            .addField("*play.cobalduhc.fr*", " -=- ", true)
             .addField("Si cela ne fonctionne pas, contactez un membre du Staff.", " -=-  ", true)
             .setColor(0x0000FF)
             .setFooter("© CobaldUHC 2019")
         message.channel.sendEmbed(embed);
     }
 
-    if (message.content === prefix + "twitter"){
+    if (message.content === prefix + "mumble"){
         var embed = new Discord.RichEmbed()
-            .setTitle("__Voici le twitter du serveur :__")
+            .setTitle("__Voici le Mumble du serveur :__")
             .setDescription(" -=- ")
-            .addField("*---*", " -=- ", true)
+            .addField("*IP: mumble.cobalduhc.fr*", " Port: 64738 ", true)
             .addField("Si cela ne fonctionne pas, contactez un membre du Staff.", " -=- ", true)
             .setColor(0x0000FF)
             .setFooter("© CobaldUHC 2019")
